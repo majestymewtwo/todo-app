@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="h-screen flex justify-center items-center bg-gray-100">
+
+    <section class="bg-white p-8 rounded shadow-md w-1/2">
+        <h1 class="text-3xl font-bold text-center mb-6">To-Do List</h1>
+
+        <form onsubmit="handleSubmit" class="flex mb-4">
+            <input id="new-task" type="text" placeholder="Enter new task" class="p-2 border rounded w-full mr-2">
+            <button type="submit" onclick="addTask()" class="bg-blue-500 text-white p-2 rounded w-32">Add Task</button>
+        </form>
+
+        <div id="to-do">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
